@@ -243,16 +243,19 @@ footer .nav>li>a:hover {
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Pros</h2>
-              <p class="list-group-item-text">Large amount of unused, city-owned land</p>
-              <p class="list-group-item-text">Substantial parking available</p>
-              <p class="list-group-item-text">Walking distance to many residents</p>
+              <ul>
+                <li>Large amount of unused, city-owned land</li>
+                <li>Substantial parking available</li>
+                <li>Walking distance to many residents</li>
+              </ul>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Cons</h2>
-              <p class="list-group-item-text">Potential inconvenience to residents on Dundaff</p>
-              <p class="list-group-item-text">Need to check depth</p>
+              <ul>
+                <li>Potential inconvenience to residents on Dundaff</li>
+                <li>Need to check depth</li>
           </div>
         </div>
       </div>
@@ -269,15 +272,19 @@ footer .nav>li>a:hover {
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Pros</h2>
-              <p class="list-group-item-text">Nearby Chrysler Museum</p>
-              <p class="list-group-item-text">Substantial parking available</p>
+              <ul>
+                <li>Nearby Chrysler Museum</li>
+                <li>Substantial parking available</li>
+              </ul>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Cons</h2>
-              <p class="list-group-item-text">Small sailboats prevented due to footbridge height</p>
-              <p class="list-group-item-text">Existing launch (Stairs leading into water)</p>
+              <ul>
+                <li>Small sailboats prevented due to footbridge height</li>
+                <li>Existing launch (Stairs leading into water)</li>
+              </ul>
           </div>
         </div>
       </div>
@@ -294,14 +301,18 @@ footer .nav>li>a:hover {
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Pros</h2>
-              <p class="list-group-item-text">Walking distance to many residents</p>
+              <ul>
+                <li>Walking distance to many residents</li>
+              </ul>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
           <div class="list-group text-center">
             <h2 class="list-group-item-heading">Cons</h2>
-              <p class="list-group-item-text">Potential inconvenience to residents in The Hague</p>
-              <p class="list-group-item-text">Limited parking</p>
+              <ul>
+                <li>Potential inconvenience to residents in The Hague</li>
+                <li>Limited parking</li>
+              </ul>
           </div>
         </div>
       </div>
@@ -669,7 +680,20 @@ $('a[href*=#]:not([href=#])').click(function() {
         });
         
         </script>
-        
+
+        <script>
+        function initMap(){
+          var isDraggable = $(document).width() > 480 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+
+          var mapOptions = {
+            draggable: isDraggable,
+
+            scrollwheel: false, // Prevent users to start zooming the map when scrolling down the page
+             //... options options options
+          };
+        }
+        </script>
+                
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
