@@ -87,34 +87,67 @@ a.list-group-item.active,[class*='-info'] {
 	background-color: #168ccc;
     color:#fff;
 }
-  
+
+.list-group-item {
+  color: #555;
+}
+
+.picture-above-table {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.blue-list-group-item.active,[class*='-info'] {
+  background-color: #168ccc;
+    color:#fff;
+}
+
+.gray-list-group-item.active,[class*='-info'] {
+  /*background-color: #e5e5ef;*/
+    color:#ddd;
+}
+
 #section1 {
 	background-color: #168ccc;
     color:#dedeff;
 }
   
-#section2 {
+#section2{
 	background-color: #e5e5ef;
     color:#686868;
+}
+  
+#section5{
+  background-color: #168ccc;
+    color:#ddd;
 }
   
 #section3 {
 	background-color: #168ccc;
     color:#ddd;
 }
-
+h1.section3 h3.section3 {
+  background-color: #168ccc;
+    color:#DEDEFF;
+}
 #section4 {
 	background-color: #fff;
     color:#444;
 }
 
+h1.section5 h3.section5 {
+  background-color: #168ccc;
+    color:#ddd;
+}
 #section5,#section7,#section7 a {
     color:#f5f5f5;
 }
 
 #section6 {
-	background-color: #168ccc;
-    color:#ddd;
+  background-color: #fff;
+    color:#444;
 }
 
 footer {
@@ -171,7 +204,7 @@ footer .nav>li>a:hover {
         <li><a href="#section2">Locations</a></li>
         <li><a href="#section3">Ramp Design</a></li>
         <li><a href="#section4">Permitted Boats</a></li>
-        <li><a href="#section5">Timing</a></li>
+        <li><a href="#section5">Contact</a></li>
         <li><a href="#section6">Contribute</a></li>
         <li>&nbsp;</li>
       </ul>
@@ -201,7 +234,7 @@ footer .nav>li>a:hover {
 
 <section class="container-fluid" id="section1">
   	<h1 class="text-center v-center">Get on the Water</h1> 
-    <p class="text-center lead">A boat launch in The Hague should be:</p> 	
+    <p class="text-center lead">A kayak and small boat launch in Ghent, Norfolk should be:</p> 	
   	<div class="container">
       <div class="row">
           <div class="col-sm-4">
@@ -235,10 +268,8 @@ footer .nav>li>a:hover {
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3 col-xs-12">
             <div class="list-group text-center">
-              <a href="#" class="list-group-item active">
-                <h2 class="list-group-item-heading">Current Options</h2>
-                <h6>Under consideration</h6>
-              </a>
+              <h2 class="blue-list-group-item active">Current Options</h2>
+              <h6>Under consideration</h6>
               <a href="#loc1" class="list-group-item">
                 <p class="list-group-item-text">Dundaff and Fairfax</p>
               </a>
@@ -252,9 +283,9 @@ footer .nav>li>a:hover {
         </div><!--/middle-->
     </div>
     <div class="row">
-      <div class="col-sm-12 col-xs-12">
-        <h2><a id="loc1">Dundaff and Fairfax</a></h2>
-        <p class="lead">On the west side of Smith's Creek, this potential location is nearby the Stone Park and Stockley Gardens.</p>
+      <div class="col-sm-12 col-xs-12" id="loc1">
+        <h2>Dundaff and Fairfax</h2>
+        <p class="lead">On the western branch of Smith's Creek, this potential location is nearby the Stone Park and Stockley Gardens.</p>
       </div>
       <div class="row">
         <div class="col-sm-4 col-xs-12 text-center">
@@ -262,29 +293,30 @@ footer .nav>li>a:hover {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.5235990350749!2d-76.29923899999997!3d36.859265000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDUxJzMzLjQiTiA3NsKwMTcnNTcuMyJX!5e1!3m2!1sen!2sus!4v1423446507665" width="400" height="300" frameborder="0" style="border:0"></iframe>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 col-xs-12" id="loc2">
           <div class="list-group">
             <h2 class="list-group-item-heading text-center">Pros</h2>
               <ul>
                 <li>Large amount of unused, city-owned land</li>
                 <li>Substantial parking available</li>
-                <li>Walking distance to many residents</li>
+                <li>Walking distance to many residents, central to The Hague</li>
+                <li>Can serve as an extension to Stockley Gardens</li>
+                <li>Close to Ghent area business (e.g. Press 626)</li>
               </ul>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-sm-4 col-xs-12" id="loc3">
           <div class="list-group">
             <h2 class="list-group-item-heading text-center">Cons</h2>
               <ul>
                 <li>Potential inconvenience to residents on Dundaff</li>
-                <li>Need to check depth</li>
           </div>
         </div>
       </div>
     </div>
     <div class="row"> 
       <div class="col-sm-12 col-xs-12">
-        <h2><a id="loc2">Mowbray and Botetourt</a></h2>
+        <h2>Mowbray and Botetourt</h2>
         <p class="lead">On the East side of Smith's Creek, this potential location is nearby the Hague footbridge and the Chrysler Museum.</p>
       </div>
       <div class="row">
@@ -315,7 +347,7 @@ footer .nav>li>a:hover {
     </div>
     <div class="row">
       <div class="col-sm-12 col-xs-12">
-        <h2><a id="loc3">Mowbray and Fairfax</a></h2>
+        <h2>Mowbray and Fairfax</h2>
         <p class="lead">On the West side of Smith's Creek, this potential location is in The Hague neighborhood and part of the current Hague walking park.</p>
       </div>
       <div class="row">
@@ -347,81 +379,92 @@ footer .nav>li>a:hover {
 </section>
 
 <section class="container-fluid" id="section3">
-  <div class="container">
+<!--  <div class="container"> -->
   	<h1 class="text-center">Ramp Design</h1>
-      <div class="row">
-        <div class="col-sm-12">
           <h3 class="text-center">There are hundreds of possible ramp designs.  The National Park Service defines many in their document - <a href="http://www.nps.gov/ncrc/programs/rtca/helpfultools/launchguide.pdf">Logical Lasting Launches</a></h3>
-        </div>
-      </div>
       <div class="row">
         <div class="col-sm-4 col-xs-12">
-              <div class="list-group">
-                <a href="#" class="list-group-item active">
+              <div class="list-group text-center">
+                <div class="gray-list-group-item active">
                   <h2 class="list-group-item-heading">Floating Launch</h2>
                   <h6>Typically composed of a deck, frame, and floats, they are anchored to the shore. Paddlers launch from the deck, which is supported by the frame, while the floats beneath the frame provide buoyancy</h6>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="row"> 
+                  <div class="picture-above-table">
+                    <img src="FloatingLaunch.png" class="img-responsive" alt="Floating Launch">
+                  </div>
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Would require pilings to be sufficiently high to anchor float in flood tides</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Typically require 3 feet of water at all times</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Adjusts to fluctuating water levels common in Smith's Creek</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Potential concern about impact of freezing</p>
-                </a>
+                </div>
               </div>
         </div><!--/left-->
         
         <div class="col-sm-4 col-xs-12">
               <div class="list-group text-center">
-                <a href="#" class="list-group-item active">
+                <div class="gray-list-group-item active">
                   <h2 class="list-group-item-heading">Fixed Ramp</h2>
                   <h6>Concrete ramps may be used as launches by themselves or in combination with floating launches, piers, bridges, dock abutments, bulkheads, and rock cribs</h6>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="row"> 
+                  <div class="picture-above-table">
+                    <img src="FixedRamp.png" class="img-responsive" alt="Floating Launch">
+                  </div>
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Would require method to increase traction (e.g. V-grooves)</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Durable; not subject to rot or rust; not subject to tidal flooding problems</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Question of aesthetics - although mitigated with finishing methods with river rocks, fieldstones, or salt-finishing</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Concern over cleaning if there is mud build-up from flooding</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Surface can be slippery</p>
-                </a>
+                </div>
               </div>
         </div><!--/middle-->
         
         <div class="col-sm-4 col-xs-12">
-              <div class="list-group text-right">
-                <a href="#" class="list-group-item active">
+              <div class="list-group text-center">
+                <div class="gray-list-group-item active">
                   <h2 class="list-group-item-heading">Modular Floats</h2>
                   <h6>Polyethylene, the most frequently chosen plastic, can function as both frame and float; they may have grooves and brackets that attach easily to shoreline structures or floats may have built-in cleats, which facilitate anchoring</h6>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="row"> 
+                  <div class="picture-above-table">
+                    <img src="ModularFloats.png" class="img-responsive" alt="Floating Launch">
+                  </div>
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Cheaper than other floating methods</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Concern over aesthetics</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Same concerns about freezing, requiring 3 feet of depth</p>
-                </a>
-                <a href="#" class="list-group-item">
+                </div>
+                <div class="list-group-item">
                   <p class="list-group-item-text">Same benefit with adjusting for flood tides</p>
-                </a>
+                </div>
               </div>
         </div><!--/right-->        
       </div><!--/row-->
-  </div><!--/container--> 
+<!--  </div><!--/container-->
 </section>
 
 <section class="container-fluid" id="section4">
@@ -429,50 +472,60 @@ footer .nav>li>a:hover {
     <div class="row">
       <div class="col-sm-6">
         <div class="list-group text-center">
-          <a href="#" class="list-group-item active">
+          <div class="blue-list-group-item active">
             <h2 class="list-group-item-heading">Permitted</h2>
             <h6>The following boat types are intended for support</h6>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Kayaks</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Canoes</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Small sailboats (e.g., Laser, Sunfish, etc)</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Stand Up Paddleboards</p>
-          </a>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="list-group text-center">
-          <a href="#" class="list-group-item active">
+          <div class="blue-list-group-item active">
             <h2 class="list-group-item-heading">Excluded</h2>
             <h6>The following boat types are specifically <strong>excluded</strong> from support</h6>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Any boat trailered by a car</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Motor boats</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Larger Boats</p>
-          </a>
-          <a href="#" class="list-group-item">
+          </div>
+          <div class="list-group-item">
             <p class="list-group-item-text">Jet Skis</p>
-          </a>
+          </div>
         </div>
       </div>      
     </div>
 </section>
-
 <section class="container-fluid" id="section5">
-	<h1 class="text-center">Timing</h1>
-    <p class="text-center lead">Likely not ready for 2015, the boat launch is being targeted for summer of 2016</p>
+	<h1 class="text-center">Contact</h1>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <h2>Email</h2>
+        <p class="lead"><a href="mailto:matt@thehagueboatlaunch.com">Email us!</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <h2>Ghent Neighborhood League</h2>
+        <p class="lead">Ghent residents, in cooperation with the Ghent Neighborhood League, City of Norfolk and other entities, are exploring the feasibility of creating a kayak-style launch in the Hague area to celebrate the joys of our Ghent neighborhood waterway.  This process will include design research and development,  as well as necessary community, city and any other approvals needed... and many steps in-between.  Please join us.</p>
+      </div>
+    </div>
 </section>
 
 <section class="container-fluid" id="section6">
@@ -485,29 +538,23 @@ footer .nav>li>a:hover {
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 col-xs-12">
                 <div class="list-group text-center">
-                  <a href="mailto:mayor@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Fraim, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
+                  <div class="blue-list-group-item active">
+                    <h2 class="list-group-item-heading">Norfolk Representatives</h2>
+                  </div>
+                  <a href="mailto:mayor@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Fraim, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer. I found out about this project through www.ghentkayaklaunch.com." class="list-group-item">
                     <p class="list-group-item-text">Mayor: Mr. Paul D. Fraim</p>
                   </a>
-                  <a href="mailto:andrew.protogyrou@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Protogyrou, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
-                    <p class="list-group-item-text">Ward 1 (Naval Station): Andrew A. Protogyrou</p>
-                  </a>
-                  <a href="mailto:theresa.whibley@norfolk.gov?subject=Boat Launch in The Hague&body=Ms. Whibley, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
+                  <a href="mailto:theresa.whibley@norfolk.gov?subject=Boat Launch in The Hague&body=Ms. Whibley, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer. I found out about this project through www.ghentkayaklaunch.com." class="list-group-item">
                     <p class="list-group-item-text">Ward 2 (Ghent, Larchmont): Theresa W. Whibley</p>
                   </a>
-                  <a href="mailto:mamie.johnson@norfolk.gov?subject=Boat Launch in The Hague&body=Ms. Johnson, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
-                    <p class="list-group-item-text">Ward 3 (Ballentine, Fairmont, Norview): Mamie Johnson</p>
-                  </a>
-                  <a href="mailto:paul.riddick@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Riddick, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
-                    <p class="list-group-item-text">Ward 4 (Berkley, Ingleside, Military Circle): Paul R. Riddick</p>
-                  </a>                                    
-                  <a href="mailto:thomas.smigiel@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Smigiel, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
-                    <p class="list-group-item-text">Ward 5 (Ocean View): Thomas R. Smigiel, Jr.</p>
-                  </a>
-                  <a href="mailto:barclay.winn@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Winn, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
+                  <a href="mailto:barclay.winn@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Winn, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer. I found out about this project through www.ghentkayaklaunch.com." class="list-group-item">
                     <p class="list-group-item-text">Superward 6: Barclay C. Winn</p>
                   </a>
-                  <a href="mailto:angelia.williams@norfolk.gov?subject=Boat Launch in The Hague&body=Ms. Williams, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer." class="list-group-item">
-                    <p class="list-group-item-text">Superward 7: Angelia M. Williams</p>
+                  <a href="mailto:city.manager@norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Jones, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer. I found out about this project through www.ghentkayaklaunch.com. I found out about this project through www.ghentkayaklaunch.com." class="list-group-item">
+                    <p class="list-group-item-text">Norfolk City Manager: Marcus D. Jones</p>
+                  </a>
+                  <a href="mailto:rpos@Norfolk.gov?subject=Boat Launch in The Hague&body=Mr. Crittendon, I would to ask you to consider having the City of Norfolk support a project constructing a boat launch in Smith's Creek, The Hague, Norfolk.  I love Norfolk and its idyllic setting on the water and want to be able to fully enjoy all that it has to offer. I found out about this project through www.ghentkayaklaunch.com." class="list-group-item">
+                    <p class="list-group-item-text">Norfolk Recreation, Parks, and Open Space Director: Darrell Crittendon</p>
                   </a>
                 </div>
             </div><!--/middle-->
@@ -527,15 +574,13 @@ footer .nav>li>a:hover {
         </a>
       </div>
       <div class="col-sm-1 col-xs-4 text-center">
-       <i class="fa fa-google-plus fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
         <a href="https://twitter.com/GhentKayak">
          <i class="fa fa-twitter fa-4x"></i>
         </a>
       </div>
       <div class="col-sm-1 col-xs-4 text-center">
-       <i class="fa fa-instagram fa-4x"></i>
+        <a href="http://instagram.com/thehagueboatlaunch/">
+          <i class="fa fa-instagram fa-4x"></i>
       </div>
   </div><!--/row-->
 </section>
